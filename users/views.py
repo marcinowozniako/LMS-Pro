@@ -28,3 +28,16 @@ def logout_user(request):
     logout(request)
     return redirect(reverse_lazy('users:login'))
 
+
+def registration_view(request):
+    form = forms.RegistrationForm(request.POST or None, request.FILES or None)
+    if request.method == 'POST':
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.is_active = True
+            user.save()
+            # TODO add permission for courses
+
+            return redirect(reverse_lazy('users:login'))
+    return render(request, 'users/registration.html', {'form': form})
+
