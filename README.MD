@@ -8,7 +8,7 @@
 4. `python manage.py migrate <app-name>`
 5. admin.py? - dodaj model do cms
 6. forms?
-7. views 
+7. views
 8. templates?
 9. local urls
 10. global urls
