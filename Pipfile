@@ -9,6 +9,7 @@ dj-database-url = "==0.5.0"
 django-crispy-forms = "==1.14.0"
 crispy-bootstrap5 = "==0.6"
 django-debug-toolbar = "*"
+ipython = "*"
 
 [dev-packages]
 
