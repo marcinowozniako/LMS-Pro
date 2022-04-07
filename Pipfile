@@ -11,6 +11,8 @@ crispy-bootstrap5 = "==0.6"
 django-debug-toolbar = "*"
 ipython = "*"
 pillow = "*"
+pytest = "==7.1.1"
+pytest-django = "==4.5.2"
 
 [dev-packages]
 
