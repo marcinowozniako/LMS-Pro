@@ -13,6 +13,7 @@ ipython = "*"
 pillow = "*"
 pytest = "==7.1.1"
 pytest-django = "==4.5.2"
+gunicorn = "*"
 
 [dev-packages]
 
