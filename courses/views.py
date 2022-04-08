@@ -7,11 +7,8 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 
-from config import settings
 from . import models
 import boto3
-
-from .custom_storage import MediaStorage
 
 
 class CreateCourseView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
