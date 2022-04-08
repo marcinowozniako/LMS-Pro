@@ -28,7 +28,7 @@ class Course(models.Model):
     owner = models.ForeignKey(get_user_model(), related_name='courses_creator', on_delete=models.CASCADE)
     subject = models.ForeignKey('Subject', related_name='courses', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, blank=True)
     overview = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     students = models.ManyToManyField(get_user_model(), related_name='courses_students', blank=True)

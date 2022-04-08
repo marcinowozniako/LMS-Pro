@@ -6,7 +6,8 @@ from django.db import migrations
 
 def create_groups(apps, schema_editor):
     Group = apps.get_model('auth', 'Group')
-    Group.objects.create(name=os.environ.get('DJ_GROUP'))
+    Group.objects.create(name=os.environ.get('DJ_GROUP_STUDENTS'))
+    Group.objects.create(name=os.environ.get('DJ_GROUP_INSTRUCTORS'))
 
 
 class Migration(migrations.Migration):
