@@ -4,3 +4,5 @@ Simple Learning Management System done in Django, created for instructors and st
 
 
 
+## Demo Version:
+https://lma-pro.herokuapp.com/
